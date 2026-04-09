@@ -39,15 +39,15 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
     <div
       class="mt-4 flex flex-col items-center justify-between gap-2 sm:flex-row font-cartograph text-[11px] text-foreground/45"
     >
-      <div class="flex flex-col gap-1">
-        <p class="tracking-wide ">
-          &copy; {currentYear} {SITE.title}
+    <p class="tracking-wide ">
+      &copy; {currentYear} {SITE.title}
+    </p>
+      <div class="flex flex-col items-center justify-center gap-1">
+        <p class="tracking-wide">
+          Para honra e glória do Senhor! <span class="text-accent">&#10015;</span>
         </p>
         <a href="/sobre" class="text-[9px] decoration-1">Saiba mais</a>
       </div>
-      <p class="tracking-wide">
-        Para honra e glória do Senhor! <span class="text-accent">&#10015;</span>
-      </p>
     </div>
   </div>
 </footer>
