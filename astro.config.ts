@@ -14,6 +14,8 @@ import { SITE } from "./src/config";
 
 import cloudflare from "@astrojs/cloudflare";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -120,5 +122,5 @@ export default defineConfig({
     },
   ],
 
-  adapter: cloudflare(),
+  adapter: vercel(),
 });
